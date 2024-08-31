@@ -42,6 +42,9 @@ export class LMS {
     borrowBook(isbnNotoBorrow) {
 
 
+        
+
+
     }
 
 
@@ -64,7 +67,7 @@ export class LMS {
 
 
 
-    
+
     addDetails() {
         let choice;
         do {
