@@ -1,0 +1,28 @@
+{
+  "name": "task",
+  "version": "1.0.0",
+  "description": "Kata: Library Management System",
+  "main": "LMS.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Udaibhat123/LMS_Incubtye.git"
+  },
+  "author": "UDAI BHAT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Udaibhat123/LMS_Incubtye/issues"
+  },
+  "homepage": "https://github.com/Udaibhat123/LMS_Incubtye#readme",
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.3",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
