@@ -1,6 +1,8 @@
 
 import { LMS } from "./LMS";
 
+// Test Cases For Adding Books
+
 describe('Tests for add book' , () => {
 
     test('should return appropriate error messages for invalid or missing book details when adding a book', () => {
@@ -38,10 +40,12 @@ describe('Tests for add book' , () => {
      })
     })
 
+
+
+// Test Cases For Borrowing a Book
+
+
     describe('Tests for Borrow book' , () => {
-
-
-
 
     test('should return error messages for missing or invalid input when borrowing a book', () => {
         let lms = new LMS();
@@ -72,6 +76,10 @@ describe('Tests for add book' , () => {
         expect(lms.viewAvailableBooks().length).toBe(0);
     })
 })
+
+
+// Test Cases For Returning a Book
+
 
 describe('Tests for Return book' , () => {
 
@@ -106,6 +114,8 @@ describe('Tests for Return book' , () => {
     })
 
 })
+
+// Test Cases For Viewing an Available Book 
 
 describe('Tests for View Available book' , () => {
 
