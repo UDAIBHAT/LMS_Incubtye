@@ -101,5 +101,41 @@ describe('Library Management System', () => {
 
 
 
+    
+    test('should return empty array if books are not available', () => {
+        let lms = new LMS();
+        lms.addBook(101, 'Maths', 'AYUSH', 2019);
+        lms.borrowBook(101);
+        lms.addBook(201, 'Science', 'Krishna', 2014);
+        lms.borrowBook(201);
+        expect(lms.viewAvailableBooks()).toEqual([]);
+    })
+
+    test('should return a list of all available books after adding multiple books', () => {
+        let lms = new LMS();
+        lms.addBook(101, 'Maths', 'AYUSH', 2019);
+        lms.addBook(201, 'Science', 'Krishna', 2014);
+        lms.addBook(301, 'English', 'Manan', 2010);
+        let expectedOutput = [{
+            isbnNo: 101,
+            title: 'Maths',
+            author: 'AYUSH',
+            publishedYear: 2019,
+            isBorrowed: false
+        }, {
+            isbnNo: 201,
+            title: 'Science',
+            author: 'Krishna',
+            publishedYear: 2014,
+            isBorrowed: false
+        }, {
+            isbnNo: 301,
+            title: 'English',
+            author: 'UDAI',
+            publishedYear: 2010,
+            isBorrowed: false
+        }];
+        expect(lms.viewAvailableBooks()).toEqual(expectedOutput);
+    })      
 
 })
