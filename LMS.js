@@ -6,6 +6,9 @@ export class LMS {
         this.booksInfo = [];
     }
 
+
+
+
     // function to add a book
     addBook(isbnNo, title, author, publishedYear) {
 
@@ -34,6 +37,7 @@ export class LMS {
         return `"${title}" book added`;
 
     }
+
 
 
 
@@ -67,6 +71,9 @@ export class LMS {
 
 
 
+
+
+
     // function to return borrowed books
     returnBook(isbnNotoReturn) {
 
@@ -75,6 +82,8 @@ export class LMS {
 
 
 
+
+    
 
     // function to get available books for the user
     viewAvailableBooks() {
